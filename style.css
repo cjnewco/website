@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Roboto, sans-serif;
+}
+body {
+    display: grid;
+    place-items: center;
+    padding: 10rem;
+    color: #ccc;
+    margin: 0;
+    background: #23283d;
+}
+.skybox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+.overlay {
+    width: 100%;
+    max-width: 1140px;
+    max-height: 640px;
+    padding: 8rem 6rem;
+    display: flex;
+    align-items: center;
+    background: rgba(30, 40, 61, 0.375);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    border: 1px solid rgba(30, 40, 61, 0.125);
+    backdrop-filter: blur(10px);
+}
+.overlay_inner {
+    max-width: 36rem;
+}
+
+.overlay_title {
+    font-size: 1.875rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin-bottom: 1rem;
+}
+
+.overlay_description {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 3rem;
+}
